@@ -1,0 +1,44 @@
+package com.aurionpro.day23.ticTacToe.test;
+
+public class TicTacToeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char ticTacToe[][] = new char[3][3];
+		boolean playerWins =false;
+		
+		//initialising
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				ticTacToe[i][j] = '-';
+			}
+		}
+		
+		
+		//printing
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		
+		//conditions
+		if(ticTacToe[1][1] == ticTacToe[1][2] && ticTacToe[1][2] == ticTacToe[1][3]) {
+			playerWins = true;
+		}
+		
+		
+		
+		
+		
+		//printing results
+		System.out.println(playerWins);
+
+	}
+
+}

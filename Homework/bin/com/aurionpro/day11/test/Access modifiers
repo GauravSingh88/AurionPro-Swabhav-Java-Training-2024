@@ -1,0 +1,9 @@
+
+
+| Access Modifier | Same Class | Subclass | Same Package | Another Class in Same Package | Subclass in Another Package | Another Class in Another Package |
+|-----------------|------------|----------|--------------|------------------------------|-----------------------------|--------------------------------|
+| `public`        | Yes        | Yes      | Yes          | Yes                          | Yes                         | Yes                            |
+| `private`       | Yes        | No       | No           | No                           | No                          | No                             |
+| default         | Yes        | Yes      | Yes          | Yes                          | No                          | No                             |
+| `protected`     | Yes        | Yes      | Yes          | Yes                          | Yes                         | No                             |
+

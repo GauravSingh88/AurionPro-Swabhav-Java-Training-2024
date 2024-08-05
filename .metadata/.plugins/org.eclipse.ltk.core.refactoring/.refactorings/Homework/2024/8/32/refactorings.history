@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TicTacToeTest.java&apos; to &apos;Homework/src/com.aurionpro.day23.ticTacToe1.test&apos;&#x0D;&#x0A;- Original project: &apos;Homework&apos;&#x0D;&#x0A;- Destination element: &apos;Homework/src/com.aurionpro.day23.ticTacToe1.test&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.day23.ticTacToe.test.TicTacToeTest.java&apos;" description="Copy compilation unit" destination="/src&lt;com.aurionpro.day23.ticTacToe1.test" element1="/src&lt;com.aurionpro.day23.ticTacToe.test{TicTacToeTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1722770887886" units="1" version="1.0"/>
+</session>

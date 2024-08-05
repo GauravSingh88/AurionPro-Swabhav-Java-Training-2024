@@ -1,0 +1,10 @@
+package com.aurionpro.model;
+
+public class Students {
+	
+	
+	private IStudentService studentService;
+	
+	
+
+}

@@ -1,0 +1,20 @@
+package com.aurionpro.test;
+
+import java.util.List;
+
+import com.aurionpro.model.Account;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Account account1 = new Account(23423,"Gaurav",1000000);
+		Account accoutn2 = new Account(23434,"something",24434);
+		Account account3 = new Account(23489,"nothing",1232);
+		
+		List<Account> accounts  = new List<Account>();
+		
+	}
+
+}

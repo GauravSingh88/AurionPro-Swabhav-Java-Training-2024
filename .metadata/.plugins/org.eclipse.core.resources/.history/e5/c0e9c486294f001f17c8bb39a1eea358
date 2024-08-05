@@ -1,0 +1,32 @@
+package com.aurionpro.creational.factory.model;
+
+public class SavingsAccount implements IAccount {
+	
+	int balance;
+	int accountNumber;
+	String name;
+
+	
+
+	public SavingsAccount(int balance, int accountNumber, String name) {
+		super();
+		this.balance = balance;
+		this.accountNumber = accountNumber;
+		this.name = name;
+	}
+
+	@Override
+	public int credit(int amount) {
+		balance +=amount ;
+		return balance;
+	}
+
+	@Override
+	public int debit(int amount) {
+		if(balance >= amount) {
+			balance -= amount;
+		}
+		return balance;
+	}
+
+}

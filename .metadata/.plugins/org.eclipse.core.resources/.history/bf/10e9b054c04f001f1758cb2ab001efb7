@@ -1,0 +1,5 @@
+package com.aurionpro.day21.model;
+
+public enum Type {
+
+}

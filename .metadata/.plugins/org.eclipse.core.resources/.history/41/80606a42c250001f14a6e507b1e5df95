@@ -1,0 +1,28 @@
+package com.aurionpro.day22.proxy.test;
+
+import com.aurionpro.day22.proxy.model.ProxyStructuralDesign;
+
+public class ProxyTest {
+	
+	 public static void main(String[] args) {
+	        // Client code that uses the proxy
+	        ProxyStructuralDesign proxy = new ProxyStructuralDesign();
+
+	        // Attempt to perform analysis with access control enabled
+	        proxy.performAnalysis();
+	        
+	        // Attempt to perform analysis again
+	        proxy.performAnalysis();
+	        
+	        // Simulate changing access control
+	        proxy.setAccess(false);
+	        
+	        // Attempt to perform analysis with access control disabled
+	        proxy.performAnalysis();
+	        
+	        // Re-enable access and attempt analysis again
+	        proxy.setAccess(true);
+	        proxy.performAnalysis();
+	    }
+
+}

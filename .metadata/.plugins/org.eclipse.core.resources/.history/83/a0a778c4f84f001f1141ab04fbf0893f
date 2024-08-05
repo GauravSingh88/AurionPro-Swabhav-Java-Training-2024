@@ -1,0 +1,17 @@
+package com.aurionpro.decorator.model;
+
+public class WheelAllign {
+	
+	private ICarService car;
+	
+	public double getCost() {
+		// TODO Auto-generated method stub
+		return 400 + car.getCost();
+	}
+
+	public WheelAllign(ICarService car) {
+		super();
+		this.car = car;
+	}
+
+}

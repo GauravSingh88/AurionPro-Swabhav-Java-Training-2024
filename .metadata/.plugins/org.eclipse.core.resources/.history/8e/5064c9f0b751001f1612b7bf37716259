@@ -1,0 +1,30 @@
+package com.aurionpro.day23.ticTacToe.test;
+
+public class TicTacToeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char ticTacToe[][] = new char[3][3];
+		
+		//initialising
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				ticTacToe[i][j] = '-';
+			}
+		}
+		
+		
+		//printing
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

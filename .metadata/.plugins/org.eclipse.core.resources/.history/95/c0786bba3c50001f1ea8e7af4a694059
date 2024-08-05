@@ -1,0 +1,32 @@
+package com.aurionpro.day22.test;
+
+import com.aurionpro.day22.model.IHat;
+import com.aurionpro.day22.model.PremiumHat;
+import com.aurionpro.day22.model.StandardHat;
+
+public class HatDecoratorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		IHat standardHat = new StandardHat();
+		IHat premiumHat =  new PremiumHat();
+		
+		System.out.println("Details of standard hat");
+		System.out.println(standardHat.getName());
+		System.out.println(standardHat.getPrice());
+		System.out.println(standardHat.getDescription());
+		
+		System.out.println("*****************");
+		
+		System.out.println("Details of premium hat");
+		System.out.println(premiumHat.getName());
+		System.out.println(premiumHat.getPrice());
+		System.out.println(premiumHat.getDescription());
+		
+		System.out.println("*****************");
+		
+
+	}
+
+}

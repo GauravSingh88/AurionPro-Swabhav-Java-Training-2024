@@ -1,0 +1,38 @@
+package com.aurionpro.creational.factory.model;
+
+public class CurrentAccount implements IAccount {
+	
+	int balance;
+	int accountNumber;
+	String name;
+
+	
+
+	public CurrentAccount(int balance, int accountNumber, String name) {
+		super();
+		this.balance = balance;
+		this.accountNumber = accountNumber;
+		this.name = name;
+	}
+
+	@Override
+	public int credit(int amount) {
+		balance +=amount ;
+		return balance;
+	}
+
+	@Override
+	public int debit(int amount) {
+		int minimumAccountBalance = 2000;
+		int checking = balance -  amount;
+		if(checking  < 0)
+			System.out.println("Insufficient Balance");
+		if(checking > 0 && checking < minimumAccountBalance )
+			System.out.println("You should maintain minimum balance which is 2000 .");
+		if(checking>= minimumAccountBalance ) {
+			balance -= amount;
+		}
+		return balance;
+	}
+
+}

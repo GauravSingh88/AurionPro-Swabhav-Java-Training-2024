@@ -1,0 +1,6 @@
+package com.aurionpro.behavioral.oberserver.model;
+
+public interface INotifier {
+	
+	public void notifies(Account account,String operation,int amount);
+}

@@ -1,0 +1,10 @@
+package com.aurionpro.facade.model;
+
+public class IndianHotel implements IHotel {
+	
+	public iMenu getMenu() {
+		return new IndianMenu();
+		
+	}
+
+}

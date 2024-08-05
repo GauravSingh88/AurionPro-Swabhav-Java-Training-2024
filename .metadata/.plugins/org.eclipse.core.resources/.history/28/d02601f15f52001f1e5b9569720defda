@@ -1,0 +1,29 @@
+package com.aurionpro.model;
+
+public class Player {
+    private char symbol;
+
+    public Player(char symbol) {
+        this.symbol = symbol;
+    }
+
+    public char getSymbol() {
+        return symbol;
+    }
+
+    public void setSymbol(char symbol) {
+        this.symbol = symbol;
+    }
+
+    public void playerSwitch() {
+        this.symbol = (symbol == 'X') ? 'O' : 'X';
+    }
+
+    public void play(int row, int column, char[][] board) {
+        if (board[row][column] == '-') {
+            board[row][column] = symbol;
+        } else {
+            System.out.println("That move cannot be performed");
+        }
+    }
+}

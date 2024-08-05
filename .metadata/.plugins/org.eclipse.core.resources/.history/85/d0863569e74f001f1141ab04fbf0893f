@@ -1,0 +1,10 @@
+package com.aurionpro.facade.test;
+
+public class ReceptionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

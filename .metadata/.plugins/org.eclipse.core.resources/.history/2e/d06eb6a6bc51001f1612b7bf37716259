@@ -1,0 +1,124 @@
+package com.aurionpro.day23.ticTacToe.test;
+
+public class TicTacToeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		char ticTacToe[][] = new char[3][3];
+		boolean playerWins =false;
+		
+		//Initializing
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				ticTacToe[i][j] = '-';
+			}
+		}
+		
+		
+		//printing
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		
+		//conditions
+		
+		
+		
+		
+		
+		
+		
+		//testing
+		
+		//first row
+		ticTacToe[0][0] = 'a';
+		ticTacToe[0][1] = 'b';
+		ticTacToe[0][2] = 'c';
+		
+		//second row
+		ticTacToe[1][0] = 'd';
+		ticTacToe[1][1] = 'c';
+		ticTacToe[1][2] = 'f';
+		
+		//third row
+		ticTacToe[2][0] = 'c';
+		ticTacToe[2][1] = 'h';
+		ticTacToe[2][2] = 'g';
+
+		
+		//printing
+		
+		for(int i =0 ; i <=2 ; i++ ) {
+			for(int j =0 ; j <=2 ; j++ ) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		//printing results
+		System.out.println(playerWins);
+
+	}
+	
+	private boolean checking(Object[][] ticTacToe, boolean playerWins) {
+		
+		//checking rows
+		//checking first row
+				if(ticTacToe[0][0] == ticTacToe[0][1] && ticTacToe[0][1] == ticTacToe[0][2]) {
+					playerWins = true;
+				}
+				
+				//checking second row
+				if(ticTacToe[1][0] == ticTacToe[1][1] && ticTacToe[1][1] == ticTacToe[1][2]) {
+					playerWins = true;
+				}
+				
+				//checking third row
+				if(ticTacToe[2][0] == ticTacToe[2][1] && ticTacToe[2][1] == ticTacToe[2][2]) {
+					playerWins = true;
+				}
+				
+				
+				//checking columns
+				
+				//checking first column
+				if(ticTacToe[0][0] == ticTacToe[1][0] && ticTacToe[1][0] == ticTacToe[2][0]) {
+					playerWins = true;
+				}
+				
+				//checking second column
+				if(ticTacToe[0][1] == ticTacToe[1][1] && ticTacToe[1][1] == ticTacToe[2][1]) {
+					playerWins = true;
+				}
+				
+				//checking third column
+				if(ticTacToe[0][2] == ticTacToe[1][2] && ticTacToe[1][2] == ticTacToe[2][2]) {
+					playerWins = true;
+				}
+				
+				
+				//checking diagonals
+				
+				//checking left to right diagonal
+				if(ticTacToe[0][0] == ticTacToe[1][1] && ticTacToe[1][1] == ticTacToe[2][2]) {
+					playerWins = true;
+				}
+				
+				//checking right to left diagonal
+				if(ticTacToe[0][2] == ticTacToe[1][1] && ticTacToe[1][1] == ticTacToe[2][0]) {
+					playerWins = true;
+				}
+				return playerWins;	
+	}
+
+}

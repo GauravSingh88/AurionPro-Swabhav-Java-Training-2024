@@ -1,0 +1,31 @@
+package com.aurionpro.day21.prototype.model;
+
+public class Book implements Prototype {
+    private String title;
+    private String author;
+    private int year;
+
+   
+    public Book(String title, String author, int year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+
+    
+    private Book(Book book) {
+        this.title = book.title;
+        this.author = book.author;
+        this.year = book.year;
+    }
+
+    @Override
+    public Prototype clone() {
+        return new Book(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Book [title=" + title + ", author=" + author + ", year=" + year + "]";
+    }
+}

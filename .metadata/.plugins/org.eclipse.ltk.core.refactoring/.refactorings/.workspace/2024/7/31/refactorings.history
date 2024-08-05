@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;19_StreaAPI_App&apos; to &apos;19_StreamAPI_App&apos;&#x0D;&#x0A;- Original element: &apos;19_StreaAPI_App&apos;&#x0D;&#x0A;- Renamed element: &apos;19_StreaAPI_App&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;19_StreaAPI_App&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=19_StreaAPI_App" name="19_StreamAPI_App" references="true" stamp="1722242404340" version="1.0"/>
+</session>

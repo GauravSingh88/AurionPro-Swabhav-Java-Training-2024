@@ -1,0 +1,43 @@
+package com.aurionpro.adapter.model;
+
+import java.util.Iterator;
+import java.util.List;
+
+
+public class ShoppingCart {
+	
+	private List<IItems> cartItems;
+
+	public ShoppingCart(List<IItems> cartItems) {
+		super();
+		this.cartItems = cartItems;
+	}
+	
+	public void addItemToCart(IItems item) {
+		System.out.println(item.getItemName() + " is added to cart, item is of $" + item.getItemprice());
+		cartItems.add(item);
+	}
+	
+	public List<IItems> getCartItems() {
+//		for(Iterator i = cartItems.iterator() ; i.hasNext();) {
+//			System.out.println(i);
+//			IItems items =(IItems)i.next();
+//			cartItems.add(items);
+//			
+//		}
+		return cartItems;
+	}
+	
+//	public double getCartPrice() {
+//		double totalPrice =0;
+//		for(Iterator i = cartItems.iterator() ; i.hasNext()) {
+//			i.
+//		}
+//		return totalPrice;
+//	}
+	
+	
+	
+	
+
+}

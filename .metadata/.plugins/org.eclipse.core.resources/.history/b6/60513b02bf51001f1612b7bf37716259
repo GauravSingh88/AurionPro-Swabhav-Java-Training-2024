@@ -1,0 +1,184 @@
+package com.aurionpro.day23.ticTacToe.test;
+
+public class TicTacToeTest {
+
+	public static void main(String[] args) {
+
+		char ticTacToe[][] = new char[3][3];
+		boolean playerWins = false;
+		int turn = 0;
+		boolean drawGame = false;
+
+		// Initializing
+
+		for (int i = 0; i <= 2; i++) {
+			for (int j = 0; j <= 2; j++) {
+				ticTacToe[i][j] = '-';
+			}
+		}
+
+		// printing
+
+		printBoard(ticTacToe);
+
+		while (!playerWins || !drawGame) {
+
+			turn++;
+			int counter =0;
+			
+			if(turn <  10 ) {
+				System.out.println("sahi hai" + counter);
+				counter++;
+			} else {
+				
+				drawGame = true;
+				System.out.println("galt hai" + counter);
+				counter++;
+			}
+
+		}
+
+		// testing
+
+		// first row
+
+		ticTacToe[0][2] = 'X';
+
+		// second row
+		ticTacToe[1][1] = 'X';
+
+		// third row
+		ticTacToe[2][0] = 'X';
+
+		// printing
+
+		for (int i = 0; i <= 2; i++) {
+			for (int j = 0; j <= 2; j++) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+
+		boolean result = false;
+		System.out.println(result);
+
+		// printing results
+		result = checkingForX(ticTacToe, playerWins);
+		System.out.println(result);
+
+	}
+
+	private static boolean checkingForX(char[][] ticTacToe, boolean playerWins) {
+
+		// checking rows
+		// checking first row
+		if (ticTacToe[0][0] == 'X' && ticTacToe[0][1] == 'X' && ticTacToe[0][1] == 'X' && ticTacToe[0][2] == 'X') {
+			playerWins = true;
+		}
+
+		// checking second row
+		if (ticTacToe[1][0] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[1][2] == 'X') {
+			playerWins = true;
+		}
+
+		// checking third row
+		if (ticTacToe[2][0] == 'X' && ticTacToe[2][1] == 'X' && ticTacToe[2][1] == 'X' && ticTacToe[2][2] == 'X') {
+			playerWins = true;
+		}
+
+		// checking columns
+
+		// checking first column
+		if (ticTacToe[0][0] == 'X' && ticTacToe[1][0] == 'X' && ticTacToe[1][0] == 'X' && ticTacToe[2][0] == 'X') {
+			playerWins = true;
+		}
+
+		// checking second column
+		if (ticTacToe[0][1] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[2][1] == 'X') {
+			playerWins = true;
+		}
+
+		// checking third column
+		if (ticTacToe[0][2] == 'X' && ticTacToe[1][2] == 'X' && ticTacToe[1][2] == 'X' && ticTacToe[2][2] == 'X') {
+			playerWins = true;
+		}
+
+		// checking diagonals
+
+		// checking left to right diagonal
+		if (ticTacToe[0][0] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[2][2] == 'X') {
+			playerWins = true;
+		}
+
+		// checking right to left diagonal
+		if (ticTacToe[0][2] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[1][1] == 'X' && ticTacToe[2][0] == 'X') {
+			playerWins = true;
+		}
+		return playerWins;
+	}
+
+	private static boolean checkingForO(char[][] ticTacToe, boolean playerWins) {
+
+		// checking rows
+		// checking first row
+		if (ticTacToe[0][0] == 'O' && ticTacToe[0][1] == 'O' && ticTacToe[0][1] == 'O' && ticTacToe[0][2] == 'O') {
+			playerWins = true;
+		}
+
+		// checking second row
+		if (ticTacToe[1][0] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[1][2] == 'O') {
+			playerWins = true;
+		}
+
+		// checking third row
+		if (ticTacToe[2][0] == 'O' && ticTacToe[2][1] == 'O' && ticTacToe[2][1] == 'O' && ticTacToe[2][2] == 'O') {
+			playerWins = true;
+		}
+
+		// checking columns
+
+		// checking first column
+		if (ticTacToe[0][0] == 'O' && ticTacToe[1][0] == 'O' && ticTacToe[1][0] == 'O' && ticTacToe[2][0] == 'O') {
+			playerWins = true;
+		}
+
+		// checking second column
+		if (ticTacToe[0][1] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[2][1] == 'O') {
+			playerWins = true;
+		}
+
+		// checking third column
+		if (ticTacToe[0][2] == 'O' && ticTacToe[1][2] == 'O' && ticTacToe[1][2] == 'O' && ticTacToe[2][2] == 'O') {
+			playerWins = true;
+		}
+
+		// checking diagonals
+
+		// checking left to right diagonal
+		if (ticTacToe[0][0] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[2][2] == 'O') {
+			playerWins = true;
+		}
+
+		// checking right to left diagonal
+		if (ticTacToe[0][2] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[1][1] == 'O' && ticTacToe[2][0] == 'O') {
+			playerWins = true;
+		}
+		return playerWins;
+	}
+
+	private static void printBoard(char[][] ticTacToe) {
+
+		System.out.println("*****************");
+		System.out.println();
+		for (int i = 0; i <= 2; i++) {
+			for (int j = 0; j <= 2; j++) {
+				System.out.print(ticTacToe[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		System.out.println("*****************");
+
+	}
+
+}

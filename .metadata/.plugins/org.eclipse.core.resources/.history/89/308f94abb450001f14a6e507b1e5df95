@@ -1,0 +1,11 @@
+package com.aurionpro.behavioral.oberserver.model;
+
+public class SMSNotifier implements INotifier {
+
+	@Override
+	public void notifies(Account account) {
+		// TODO Auto-generated method stub
+		System.out.println("Transaciton complete sms");
+		System.out.println(account.getBalance());	}
+
+}
