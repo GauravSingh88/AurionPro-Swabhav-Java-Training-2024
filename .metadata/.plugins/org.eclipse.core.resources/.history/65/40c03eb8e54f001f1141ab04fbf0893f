@@ -1,7 +1,0 @@
-package com.aurionpro.facade.model;
-
-public interface IHotel {
-	
-	void getMenu();
-
-}

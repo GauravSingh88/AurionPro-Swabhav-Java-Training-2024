@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value=";" key="selection"/>
-		<item value="true" key="casesensitive"/>
+		<item value="Transaction" key="selection"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="transaction"/>
+			<item value="view"/>
+			<item value="accountGenerator"/>
+			<item value="suppliers"/>
+			<item value="inventory"/>
 			<item value=","/>
 			<item value="employee"/>
 			<item value="employees"/>
@@ -18,12 +23,10 @@
 			<item value="20000"/>
 			<item value="200000"/>
 			<item value="salary"/>
-			<item value="Salary"/>
-			<item value="EmployeeId"/>
-			<item value="employeeId"/>
-			<item value="double"/>
 		</list>
 		<list key="replacehistory">
+			<item value="orders"/>
+			<item value="suppliers"/>
 			<item value=";"/>
 			<item value="book"/>
 			<item value="books"/>

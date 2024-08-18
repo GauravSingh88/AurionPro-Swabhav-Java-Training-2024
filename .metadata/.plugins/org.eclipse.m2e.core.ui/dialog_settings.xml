@@ -3,10 +3,16 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.aurionpro"/>
+			<item value="com.aurionpro.model"/>
 		</list>
 		<list key="name">
+			<item value="25_Mockito_testing"/>
 		</list>
 		<list key="artifactId">
+			<item value="31_springcore2_app"/>
+			<item value="30_springcore_app"/>
+			<item value="25_Mockitotesting_app"/>
+			<item value="25_Mockito_testing"/>
 			<item value="23_unitTesting_App"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,6 +51,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\AURIONPRO\25_Mockitotesting_app\src\test\java\com\aurionpro\model\StudentsTest.java"/>
+			<item value="D:\AURIONPRO\24_unitTesting_App"/>
+			<item value="D:\AURIONPRO\Homework"/>
 			<item value="D:\AURIONPRO\23_DesignPattern_App\src\com\aurionpro\behavioral\Strategy\model\OperationStrategy.java"/>
 		</list>
 		<list key="projectNameTemplate">

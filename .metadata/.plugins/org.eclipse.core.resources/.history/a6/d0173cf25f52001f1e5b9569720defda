@@ -1,7 +1,0 @@
-package com.aurionpro.model;
-
-public interface IPlayers {
-	
-
-	void play(int row, int column, char [][] board);
-}
